@@ -1,0 +1,21 @@
+host: 0.0.0.0
+imrpc:
+    etcd:
+        hosts:
+            - 192.168.88.131:3379
+        key: im.rpc
+jwtauth:
+    accessexpire: 8640000
+    accesssecret: gim123456
+name: im
+port: 8882
+socialrpc:
+    etcd:
+        hosts:
+            - 192.168.88.131:3379
+        key: social.rpc
+userrpc:
+    etcd:
+        hosts:
+            - 192.168.88.131:3379
+        key: user.rpc

@@ -1,0 +1,12 @@
+cache:
+    - host: 192.168.88.131:16379
+      type: node
+etcd:
+    hosts:
+        - 192.168.88.131:3379
+    key: social.rpc
+listenon: 0.0.0.0:8080
+mysql:
+    datasource: root:gim123456@tcp(192.168.88.131:13306)/gim?charset=utf8mb4&parseTime=true
+name: social.rpc
+timeout: 1000

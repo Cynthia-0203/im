@@ -1,0 +1,14 @@
+database: redis
+host: 0.0.0.0
+jwtauth:
+    accessexpire: 8640000
+    accesssecret: gim123456
+name: user
+port: 8888
+redisx:
+    host: 192.168.88.131:16379
+userrpc:
+    etcd:
+        hosts:
+            - 192.168.88.131:3379
+        key: user.rpc

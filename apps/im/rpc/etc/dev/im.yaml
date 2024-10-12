@@ -1,0 +1,11 @@
+Name: im.rpc
+ListenOn: 0.0.0.0:10002
+
+Etcd:
+  Hosts:
+  - 192.168.88.131:3379
+  Key: im.rpc
+
+Mongo:
+  Url: "mongodb://root:gim123456@192.168.88.131:47017"
+  Db: gim

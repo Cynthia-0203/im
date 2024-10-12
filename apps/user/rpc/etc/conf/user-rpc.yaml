@@ -1,0 +1,18 @@
+cache:
+    - host: 192.168.88.131:16379
+      pass: gim123456
+      type: node
+etcd:
+    hosts:
+        - 192.168.88.131:3379
+    key: user.rpc
+jwt:
+    accessexpire: 8640000
+    accesssecret: gim123456
+listenon: 0.0.0.0:10000
+mysql:
+    datasource: root:gim123456@tcp(192.168.88.131:13306)/gim?charset=utf8mb4
+name: user.rpc
+redisx:
+    host: 192.168.88.131:16379
+    type: node

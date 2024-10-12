@@ -1,0 +1,47 @@
+Name: task.mq
+ListenOn: 0.0.0.0:10091
+
+MsgChatTransfer:
+  Name: MsgChatTransfer
+  Brokers:
+    - 192.168.88.131:9092
+  Group: kafka
+  Topic: msgChatTransfer
+  Offset: first
+  Consumers: 1
+
+Redisx:
+  Host: 192.168.88.131:16379
+  Type: node
+  # Pass: gim123456
+
+Mongo:
+  Url: "mongodb://root:gim123456@192.168.88.131:47017"
+  Db: gim
+
+# Mysql:
+#   DataSource: root:123@tcp(192.168.79.167:13306)/gim?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+
+
+Ws:
+  Host: 192.168.88.131:9999
+
+SocialRpc:
+  Etcd:
+    Hosts:
+      - 192.168.88.131:3379
+    Key: social.rpc
+
+MsgReadTransfer:
+  Name: MsgReadTransfer
+  Brokers:
+    - 192.168.88.131:9092
+  Group: kafka
+  Topic: msgReadTransfer
+  Offset: first
+  Consumers: 1
+
+MsgReadHandler:
+  GroupMsgReadHandler: 1
+  GroupMsgReadRecordDelayTime: 2
+  GroupMsgReadRecordDelayCount: 2

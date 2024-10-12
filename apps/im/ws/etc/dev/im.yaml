@@ -1,0 +1,24 @@
+Name: im.ws
+ListenOn: 0.0.0.0:10090
+
+
+MsgChatTransfer:
+  Topic: msgChatTransfer
+  Addrs:
+    - 192.168.88.131:9092
+
+Redisx:
+  host: 192.168.88.131:16379
+  # pass: gim123456
+JwtAuth:
+  AccessSecret: gim123456
+  AccessExpire: 8640000
+
+Mongo:
+  Url: "mongodb://root:gim123456@192.168.88.131:47017"
+  Db: gim
+
+MsgReadTransfer:
+  Topic: msgReadTransfer
+  Addrs:
+    - 192.168.88.131:9092

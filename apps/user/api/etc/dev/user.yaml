@@ -1,0 +1,16 @@
+Name: user
+Host: 0.0.0.0
+Port: 8888
+
+Redisx:
+  Host: 192.168.88.131:16379
+  # Pass: gim123456
+UserRpc:
+  Etcd:
+    Hosts:
+      - 192.168.88.131:3379
+    Key: user.rpc
+
+JwtAuth:
+  AccessSecret: gim
+  AccessExpire: 8640000

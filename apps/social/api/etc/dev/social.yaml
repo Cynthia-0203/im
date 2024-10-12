@@ -1,0 +1,28 @@
+Name: social
+Host: 0.0.0.0
+Port: 8881
+
+SocialRpc:
+  Etcd:
+    Hosts:
+      - 192.168.88.131:3379
+    Key: social.rpc
+  Timeout: 10000
+
+Timeout: 10000
+ImRpc:
+  Etcd:
+    Hosts:
+    - 192.168.88.131:3379
+    Key: im.rpc
+UserRpc:
+  Etcd:
+    Hosts:
+      - 192.168.88.131:3379
+    Key: user.rpc
+redisx:
+    host: 192.168.88.131:16379
+    # pass: gim123456
+JwtAuth:
+  AccessSecret: gim123456
+ 

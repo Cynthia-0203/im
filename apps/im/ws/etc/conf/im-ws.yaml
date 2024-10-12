@@ -1,0 +1,18 @@
+jwtauth:
+    accessexpire: 8640000
+    accesssecret: gim123456
+listenon: 0.0.0.0:9999
+mongo:
+    db: gim
+    url: mongodb://root:gim123456@192.168.88.131:47017
+msgchattransfer:
+    addrs:
+        - 192.168.88.131:9092
+    topic: msgChatTransfer
+msgreadtransfer:
+    addrs:
+        - 192.168.88.131:9092
+    topic: msgReadTransfer
+name: im.ws
+redisx:
+    host: 192.168.88.131:16379
